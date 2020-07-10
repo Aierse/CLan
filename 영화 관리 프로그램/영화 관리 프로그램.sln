@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "영화 관리 프로그램", "영화 관리 프로그램.vcxproj", "{65B0A8F3-8E94-42F3-9429-DBEEEA8B0DE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65B0A8F3-8E94-42F3-9429-DBEEEA8B0DE0}.Debug|x64.ActiveCfg = Debug|x64
+		{65B0A8F3-8E94-42F3-9429-DBEEEA8B0DE0}.Debug|x64.Build.0 = Debug|x64
+		{65B0A8F3-8E94-42F3-9429-DBEEEA8B0DE0}.Debug|x86.ActiveCfg = Debug|Win32
+		{65B0A8F3-8E94-42F3-9429-DBEEEA8B0DE0}.Debug|x86.Build.0 = Debug|Win32
+		{65B0A8F3-8E94-42F3-9429-DBEEEA8B0DE0}.Release|x64.ActiveCfg = Release|x64
+		{65B0A8F3-8E94-42F3-9429-DBEEEA8B0DE0}.Release|x64.Build.0 = Release|x64
+		{65B0A8F3-8E94-42F3-9429-DBEEEA8B0DE0}.Release|x86.ActiveCfg = Release|Win32
+		{65B0A8F3-8E94-42F3-9429-DBEEEA8B0DE0}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61228524-94E6-4B8A-9BB3-30E53E3D5C69}
+	EndGlobalSection
+EndGlobal
