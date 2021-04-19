@@ -32,12 +32,12 @@ void push(LinkedStackType* s, element item) {
 
 element pop(LinkedStackType* s) {
 	if (is_empty(s)) {
-		fprintf(stderr, "½ºÅÃÀÌ ºñ¾îÀÖÀ½\n");
+		fprintf(stderr, "Â½ÂºÃ…ÃƒÃ€ÃŒ ÂºÃ±Â¾Ã®Ã€Ã–Ã€Â½\n");
 		exit(1);
 	}
 	else {
 		StackNode* temp = s->top;
-		int data = temp->data;
+		element data = temp->data;
 		s->top = s->top->link;
 		free(temp);
 
