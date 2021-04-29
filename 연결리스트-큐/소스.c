@@ -7,19 +7,19 @@ typedef struct QueueNode {
 	struct QueueNode* link;
 } QueueNode;
 
-typedef struct LinkedQueueType {
+typedef struct {
 	struct QueueNode* front, * rear;
-} LinkedQueueType;
+} Queue;
 
-void init(LinkedQueueType* q) {
+void init(Queue* q) {
 	q->front = q->rear = NULL;
 }
 
-int is_empty(LinkedQueueType* q) {
+int is_empty(Queue* q) {
 	return q->front == NULL;
 }
 
-void enqueue(LinkedQueueType* q, element item) {
+void enqueue(Queue* q, element item) {
 	QueueNode* temp = (QueueNode*)malloc(sizeof(QueueNode));
 	temp->data = item;
 	temp->link = NULL;
@@ -34,9 +34,9 @@ void enqueue(LinkedQueueType* q, element item) {
 	}
 }
 
-element dequeue(LinkedQueueType* q) {
+element dequeue(Queue* q) {
 	if (is_empty(q)) {
-		fprintf(stderr, "Å¥°¡ ºñ¾îÀÖÀ½\n");
+		fprintf(stderr, "Ã…Â¥Â°Â¡ ÂºÃ±Â¾Ã®Ã€Ã–Ã€Â½\n");
 		exit(1);
 	}
 
@@ -49,7 +49,7 @@ element dequeue(LinkedQueueType* q) {
 	return data;
 }
 
-void display(LinkedQueueType* q) {
+void display(Queue* q) {
 	QueueNode* p;
 	for (p = q->front; p->link != NULL; p = p->link) {
 		printf("%d -> ", p->data);
@@ -58,7 +58,7 @@ void display(LinkedQueueType* q) {
 }
 
 int main(void) {
-	LinkedQueueType q;
+	Queue q;
 
 	init(&q);
 
