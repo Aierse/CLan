@@ -2,34 +2,34 @@
 #include <string.h>
 #define _CRT_SECURE_NO_WARNINGS
 
-struct student //±¸Á¶Ã¼ student¸¦ ¼±¾ğ
+struct student //êµ¬ì¡°ì²´ studentë¥¼ ì„ ì–¸
 {
-	char name[16]; //¹®ÀÚ¿­ Å©±â 20Â¥¸® º¯¼ö ¼±¾ğ
-	int age; //³ªÀÌ¸¦ ³Ö¾îÁÙ º¯¼ö
-	int math_score; //¼öÇĞ ¼ºÀûÀ» ³Ö¾îÁÙ º¯¼ö
-	int sum; //Æò±ÕÀ» ±¸ÇÒ¶§ »ç¿ëÇÒ ÇÕ°è¸¦ ¼±¾ğ
-	int average; //Æò±ÕÀ» À§ÇÑ º¯¼ö
+	char name[16]; //ë¬¸ìì—´ í¬ê¸° 20ì§œë¦¬ ë³€ìˆ˜ ì„ ì–¸
+	int age; //ë‚˜ì´ë¥¼ ë„£ì–´ì¤„ ë³€ìˆ˜
+	int math_score; //ìˆ˜í•™ ì„±ì ì„ ë„£ì–´ì¤„ ë³€ìˆ˜
+	int sum; //í‰ê· ì„ êµ¬í• ë•Œ ì‚¬ìš©í•  í•©ê³„ë¥¼ ì„ ì–¸
+	int average; //í‰ê· ì„ ìœ„í•œ ë³€ìˆ˜
 };
 
-int main() //¸ŞÀÎ ÇÔ¼ö
+int main() //ë©”ì¸ í•¨ìˆ˜
 {
-	struct student arr[5]; //arr5°³ ¹è¿­
-	int i, j, temp; //i, j, temp¼±¾ğ
-	for (i = 0; i < 5; i++)//5¹ø ¹İº¹ÇÏ´Â for¹®
+	struct student arr[5]; //arr5ê°œ ë°°ì—´
+	int i, j, temp; //i, j, tempì„ ì–¸
+	for (i = 0; i < 5; i++)//5ë²ˆ ë°˜ë³µí•˜ëŠ” forë¬¸
 	{
-		printf("ÀÌ¸§ ÀÔ·Â : \n"); scanf_s("%s", arr[i].name); //ÀÌ¸§ ÀÔ·Â ¹Ş¾Æ ÀúÀå
-		printf("³ªÀÌ ÀÔ·Â : \n"); scanf_s("%d", &arr[i].age); //³ªÀÌ¸¦ ÀÔ·Â ¹Ş¾Æ ÀúÀå
-		printf("¼öÇĞ Á¡¼ö ÀÔ·Â : \n"); scanf_s("%d", &arr[i].math_score); //¼öÇĞ Á¡¼ö ÀÔ·Â ¹Ş¾Æ ÀúÀå
+		printf("ì´ë¦„ ì…ë ¥ : \n"); scanf_s("%s", arr[i].name); //ì´ë¦„ ì…ë ¥ ë°›ì•„ ì €ì¥
+		printf("ë‚˜ì´ ì…ë ¥ : \n"); scanf_s("%d", &arr[i].age); //ë‚˜ì´ë¥¼ ì…ë ¥ ë°›ì•„ ì €ì¥
+		printf("ìˆ˜í•™ ì ìˆ˜ ì…ë ¥ : \n"); scanf_s("%d", &arr[i].math_score); //ìˆ˜í•™ ì ìˆ˜ ì…ë ¥ ë°›ì•„ ì €ì¥
 	}
-	for (i = 0; i < 5; i++) //5¹ø ¹İº¹ÇÏ´Â for¹® ÀÔ·Â¹ŞÀº °ªµéÀ» Ãâ·ÂÇÏ±â À§ÇØ¼­
+	for (i = 0; i < 5; i++) //5ë²ˆ ë°˜ë³µí•˜ëŠ” forë¬¸ ì…ë ¥ë°›ì€ ê°’ë“¤ì„ ì¶œë ¥í•˜ê¸° ìœ„í•´ì„œ
 	{
 		arr[i].sum = arr[i].math_score;
 		arr[i].average = arr[i].sum / 3;
 
-		printf("---- %d¹øÂ° ÇĞ»ı Á¤º¸ ÀÔ·Â  ---- \n", i + 1);
-		printf("ÀÌ¸§ : %s \n", arr[i].name); //ÀÌ¸§ Ãâ·Â
-		printf("³ªÀÌ : %d \n", arr[i].age); //³ªÀÌ Ãâ·Â
-		printf("¼öÇĞ Á¡¼ö : %d \n", arr[i].math_score); //¼öÇĞ Á¡¼ö Ãâ·Â
+		printf("---- %dë²ˆì§¸ í•™ìƒ ì •ë³´ ì…ë ¥  ---- \n", i + 1);
+		printf("ì´ë¦„ : %s \n", arr[i].name); //ì´ë¦„ ì¶œë ¥
+		printf("ë‚˜ì´ : %d \n", arr[i].age); //ë‚˜ì´ ì¶œë ¥
+		printf("ìˆ˜í•™ ì ìˆ˜ : %d \n", arr[i].math_score); //ìˆ˜í•™ ì ìˆ˜ ì¶œë ¥
 	}
 	for (i = 0; i < 5; i++)
 	{
@@ -45,8 +45,9 @@ int main() //¸ŞÀÎ ÇÔ¼ö
 	}
 	for (i = 0; i < 5; i++)
 	{
-		name, arr[i].average);
-	}		printf("----  %dµî ÇĞ»ı Á¤º¸  ----\n", i + 1);
-	printf("ÀÌ¸§ : %s   Æò±Õ : %d \n", arr[i].
-		return 0; //ÇÔ¼ö ÃÊ±âÈ­
+		printf("----  %dë²ˆ í•™ìƒ ì •ë³´  ----\n", i + 1);
+		printf("ì´ë¦„ : %s   í‰ê·  : %d \n", arr[i].name, arr[i].average);
+	}		
+	
+	return 0; //í•¨ìˆ˜ ì´ˆê¸°í™”
 }
